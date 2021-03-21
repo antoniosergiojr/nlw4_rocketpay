@@ -21,9 +21,9 @@ Rocketpay is an application that simulates a payment API between users in JSON f
 
   
   Commands that were used to start the project:
-  # Creating a new directory without html and css (api)
+  ## Creating a new directory without html and css (api)
     mix phx.new nlw4_rocketpay --no-webpack --no-html
-  # Creating Credo file
+  ## Creating Credo file
     mix credo gen.config  
 ---
 
@@ -59,13 +59,12 @@ Rocketpay is an application that simulates a payment API between users in JSON f
     # If you want to run the tests
     mix test
 
-    Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
-    Phoenix Live Dashboard: [`localhost:4000/dashboard/home`](http://localhost:4000/dashboard/home).
-
-    Ready to run in production? 
-    Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
+    Now you can visit http://localhost:4000 from your browser.
+    Phoenix Live Dashboard: http://localhost:4000/dashboard/home.
+ ```
+  Ready to run in production? 
+  Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
     
-  ```
 ---
 
 
