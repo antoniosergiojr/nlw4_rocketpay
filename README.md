@@ -2,6 +2,8 @@
 
 Rocketpay is an application that simulates a payment API between users in JSON format, making it possible to make deposits, withdrawals and transfers using the nickname (simulating the PicPay).
 
+<!--![Código](./img/preview.png)-->
+
 ## 📌 Index
 - ⚙ [Settings](#-settings)
 - 💻 [Technologies](#-technologies)
@@ -31,6 +33,7 @@ Rocketpay is an application that simulates a payment API between users in JSON f
     - Elixir (is a dynamic, functional language for building scalable and maintainable applications)
     - Phoenix Framework (is a web framework for the Elixir programming language that gives you peace of mind from development to production)
     - Credo (is a static code analysis tool for the Elixir language with a focus on teaching and code consistency)
+    - Pbkdf2 (or Bcrypt to password hashing)
     - PostgreSQL
 ---
 
