@@ -34,6 +34,7 @@ Rocketpay is an application that simulates a payment API between users in JSON f
     - Phoenix Framework (is a web framework for the Elixir programming language that gives you peace of mind from development to production)
     - Credo (is a static code analysis tool for the Elixir language with a focus on teaching and code consistency)
     - Pbkdf2 (or Bcrypt to password hashing)
+    - ExCoveralls (An Elixir library that reports test coverage statistics, with the option to post to coveralls.io service)
     - PostgreSQL
 ---
 
@@ -60,10 +61,18 @@ Rocketpay is an application that simulates a payment API between users in JSON f
     mix phx.server
 
     # If you want to run the tests
-    mix test
+    mix test --cover
+    mix coveralls.html (in 'cover' folder open the file 'excoveralls.html')
+    mix test 
 
     Now you can visit http://localhost:4000 from your browser.
     Phoenix Live Dashboard: http://localhost:4000/dashboard/home.
+    
+    Open file Insomnia    
+    Post create_user http://localhost:4000/api/users
+    Post deposit http://localhost:4000/api/accounts/b8e945ef-04a6-4878-9241-3cfc02ba658e/deposit
+    Post withdraw http://localhost:4000/api/accounts/b8e945ef-04a6-4878-9241-3cfc02ba658e/withdraw
+    Post transaction http://localhost:4000/api/accounts/transaction  
  ```
   Ready to run in production? 
   Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).

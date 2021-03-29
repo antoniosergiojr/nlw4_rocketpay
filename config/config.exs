@@ -22,6 +22,11 @@ config :rocketpay, Rocketpay.Repo,
   migration_primary_key: [type: :binary_id],
   migration_foreign_key: [type: :binary_id]
 
+config :rocketpay, :basic_auth,
+  username: "teste", # pegar pela variavel de ambiente para não expor o usuário no código = System.get_env("USER")
+  password: "123" # pegar pela variavel de ambiente para não expor a senha no código = System.get_env("PASS")
+  # header auth = teste:123 = base64 dGVzdGU6MTIz
+
 # Configures Elixir's Logger
 config :logger, :console,
   format: "$time $metadata[$level] $message\n",
