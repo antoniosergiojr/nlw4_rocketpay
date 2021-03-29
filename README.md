@@ -2,7 +2,7 @@
 
 Rocketpay is an application that simulates a payment API between users in JSON format, making it possible to make deposits, withdrawals and transfers using the nickname (simulating the PicPay).
 
-<!--![Código](./img/preview.png)-->
+![Código](./img/preview.png)
 
 ## 📌 Index
 - ⚙ [Settings](#-settings)
